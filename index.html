@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset-UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="estilo02.css">
+    <title>Maximiliano Tost</title>
+    
+    <style> @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+        body {
+            background-color: #1E1E1E; 
+            font-family: Arial, sans-serif;
+            color: #EAEAEA; 
+        }
+
+        h1 {
+            color: #DC2626; 
+            font-family: 'Oswald', sans-serif; 
+            font-size: 3em; 
+            animation: pulse 2.5s infinite; 
+        }
+        
+        h2 {
+            color: #AAAAAA; 
+        }
+        
+        h1, h2, p {
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 260px;
+            height: 250px; 
+            margin-bottom: 20px;
+            border-radius: 8px; 
+            box-shadow: 0 4px 10px rgba(220, 38, 38, 0.2); 
+        }
+
+        .button-container {
+            text-align: center; 
+            margin: 20px 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0 2px 10px rgba(0, 78, 152, 0.2); 
+        }
+
+        th, td {
+            border: 1px solid #004E98; 
+            padding: 10px; 
+            text-align: left;
+        }
+
+        thead th {
+            color:#ffffff;
+            background-color: #004E98; 
+        }
+        
+        button {
+            font-size:18px;
+            letter-spacing:2px;
+            text-transform: uppercase;
+            display:inline-block;
+            text-align: center;
+            font-weight:bold;
+            padding: 0.7em 2em;
+            border: 3px solid #DC2626; 
+            border-radius: 2px;
+            position: relative;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            color: #DC2626; 
+            text-decoration: none;
+            transition: 0.3s ease all;
+            z-index: 1; 
+            background-color: transparent; 
+        }
+        
+        button:before{
+            transition: 0.5s all ease;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            opacity: 0;
+            content: '';
+            background-color: #DC2626;
+            z-index: -1;
+        }
+        
+        button:hover, button:focus {
+            color: #1E1E1E; 
+        }
+        
+        button:hover::before, button:focus:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+        
+        button:active {
+            transform: scale(0.9);
+        }
+
+        button a {
+            text-decoration: none; 
+            color: inherit; 
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                text-shadow: 0 0 5px #DC2626, 0 0 10px #DC2626;
+            }
+            50% {
+                transform: scale(1.02);
+                text-shadow: 0 0 10px #DC2626, 0 0 20px #DC2626, 0 0 30px #DC2626;
+            }
+            100% {
+                transform: scale(1);
+                text-shadow: 0 0 5px #DC2626, 0 0 10px #DC2626;
+            }
+        }</style>
+</head>
+
+<body>
+
+    <h1>Maximiliano Tost Macias</h1>
+    
+    <div class="button-container">
+        <button><a href="deportes.html">Deportes</a></button>
+        <button><a href="Arte.html">Arte</a></button>
+        <button><a href="Ciencia.html">Ciencia</a></button>
+    </div>
+
+    <div>
+        <img src="mi_foto.jpg">
+        <p>
+            Hola mi nombre es Maximiliano Tost Macias tengo 17 años naci el 21 de abril del 2008, soy una persona que le agrada la musica<br>
+            así como ir al gym y jugar videojuegos, me llama mucho el interes aprender a hacer cosas con la computadora y a desarrollr habilidades dedicando tiempo.
+        </p>
+    </div>
+
+    <h2>Historial Académico</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Escuela (Kinder, primaria, secundaria, preparatoria, Universidad)</th>
+                <th>Diploma</th>
+                <th>URL</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>Kinder<br>(no recuerdo)</td>
+                <td>No existe algun diploma</td>
+                <td>No existe algun URL</td>
+            </tr>
+            <tr>
+                <td>Primaria Colegio Presidente Kennedy</td>
+                <td>No existe algun diploma</td>
+                <td>Si existe algun URL<br><button><a href="https://www.facebook.com/share/1MnZAbBzCV/?mibextid=wwXlfr" target="_blank">Visita CPK</a></button></td>
+            </tr>
+            <tr>
+                <td>Secundaria instituto militarizado anglo americano</td>
+                <td>Si existen diplomas</td>
+                <td>Si existe algun URL<br><button><a href="https://www.facebook.com/share/171NRemZye/?mibextid=wwXlfr" target="_blank">Visita IMAA</a></button></td>
+            </tr>
+            <tr>
+                <td>Universidad autonoma de san luis potosí<br>Facultad de ingenieria</td>
+                <td>No existe algun diploma<br>esta en proceso de obtencion</td>
+                <td>Si existe algun URL<br><button><a href="https://www.ingenieria.uaslp.mx/#gsc.tab=0" target="_blank">visita UASLP ingenieria</a></button>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
